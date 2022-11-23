@@ -1,5 +1,3 @@
-#
-
 def knapSack(W, wt, val, n):
     K = [[0 for x in range(W + 1)] for x in range(n + 1)]
   
@@ -16,10 +14,20 @@ def knapSack(W, wt, val, n):
     return K[n][W]
   
 # Driver program to test above function
-val = [60, 100, 120]
-wt = [10, 20, 30]
-W = 50
+
+print('Enter values: ')
+val = list(map(int,input().split()))
+print("Enter weight: ")
+wt = list(map(int,input().split()))
+print("Enter weight: ")
+
+W = int(input())
 n = len(val)
+
+# val = [60, 100, 120]
+# wt = [10, 20, 30]
+# W = 50
+# n = len(val)
 print("Values:", val)
 print("Weights:", wt)
 print("Knapsack Capacity:", W)
