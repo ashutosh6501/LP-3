@@ -30,8 +30,16 @@ void quicksort(int arr[],int l,int r){
 		}
 }
 int main(){
-	int arr[]={20,10,2,30,15};
-	int n = 5;
+    int n;
+    cout<<"Enter size of array: ";
+    cin>>n;
+    
+	int arr[n];
+	for(int i=0;i<n;i++) {
+	    cin>>arr[i];
+	}
+	
+// 	int n = 5;
 	quicksort(arr,0,n-1);
 	for(int i=0;i<n;i++){
 		cout<<arr[i]<<" ";
