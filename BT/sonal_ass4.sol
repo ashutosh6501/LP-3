@@ -28,7 +28,9 @@ contract Student_management{
             if(stud.stu_id== stu_id){
             return(stud.Name,stud.department);
         }
+        
      }
+     return("not found","not found");
  
      }
 }
